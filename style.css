@@ -1,0 +1,138 @@
+* {
+  border: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.leftCol {
+  flex-basis: 50%;
+  height: 100vh;
+  position: relative;
+}
+.rightCol {
+  flex-basis: 50%;
+  height: 100vh;
+  position: relative;
+}
+
+.logo {
+  display: block;
+  width: 80px;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+.content {
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
+}
+.content h1 {
+  color: #05a35f;
+  font-size: 60px;
+  line-height: 70px;
+  margin: 25px 0;
+}
+.content p {
+  color: #777;
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+button {
+  width: 200px;
+  border: none;
+  background-color: #05a35f;
+  box-shadow: 0px 10px 10px 1px rgba(219, 219, 219, 0.5);
+  padding: 25px 0;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.slider {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  /* transform: translateY(-50%); */
+}
+.slider img {
+  width: 100%;
+}
+.sliderContent {
+  width: 100%;
+  height: 45%;
+  background: #05a35f;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.sliderContent h2 {
+  font-size: 26px;
+  font-weight: 100;
+  color: #fff;
+}
+.sliderContent p {
+  font-size: 16px;
+  font-weight: 50;
+  color: #bfffdd;
+  line-height: 26px;
+  margin-top: 10px;
+}
+hr {
+  border: none;
+  width: 100%;
+  height: 1px;
+  background: #b5e3cf;
+  margin: 20px 0 30px;
+}
+.controller {
+  width: 150px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.controller img {
+  width: 35px;
+  cursor: pointer;
+}
+.verticalLine {
+  width: 2px;
+  height: 30px;
+  background: black;
+}
+/* Media Query for small screen devices */
+@media only screen and (max-width: 800px) {
+  .logo {
+    margin: auto;
+  }
+  .leftCol {
+    flex-basis: 100%;
+  }
+  .rightCol {
+    flex-basis: 100%;
+  }
+  .content {
+    left: 0;
+    padding: 30px;
+    text-align: center;
+  }
+  .content h1 {
+    font-size: 34px;
+    line-height: 38px;
+  }
+  .slider {
+    height: auto;
+  }
+  .sliderContent {
+    height: auto;
+  }
+}
